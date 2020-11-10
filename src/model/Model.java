@@ -1,4 +1,4 @@
-package ProjectStarterCode.model;
+package model;
 
 public class Model {
     private boolean roundStarted;

@@ -1,4 +1,4 @@
-package ProjectStarterCode.controller;
+package controller;
 
 public class GameInfo {
     // the state of the Game/Application

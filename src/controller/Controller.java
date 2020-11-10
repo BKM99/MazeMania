@@ -1,4 +1,4 @@
-package ProjectStarterCode.controller;
+package controller;
 
 import ProjectStarterCode.model.Model;
 import ProjectStarterCode.view.View;

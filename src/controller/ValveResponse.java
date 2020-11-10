@@ -1,4 +1,4 @@
-package ProjectStarterCode.controller;
+package controller;
 
 public enum ValveResponse {
     MISS,

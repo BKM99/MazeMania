@@ -1,5 +1,3 @@
-package ProjectStarterCode;
-
 import ProjectStarterCode.controller.Controller;
 import ProjectStarterCode.controller.Message;
 import ProjectStarterCode.model.Model;

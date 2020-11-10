@@ -1,4 +1,4 @@
-package ProjectStarterCode.view;
+package view;
 
 import ProjectStarterCode.controller.HitMessage;
 import ProjectStarterCode.controller.Message;

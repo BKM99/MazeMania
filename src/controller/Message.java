@@ -1,4 +1,4 @@
-package ProjectStarterCode.controller;
+package controller;
 
 import java.io.Serializable;
 
