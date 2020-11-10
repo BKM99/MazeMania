@@ -34,6 +34,16 @@ public class Maze {
     }
 
     /**
+     * Adds a wall in the desired space
+     *
+     * @param row
+     * @param col
+     */
+    public void addWall(int row, int col) {
+        maze[row][col] = wall;
+    }
+
+    /**
      * Checks if the desired space is a wall
      *
      * @param row
@@ -42,16 +52,6 @@ public class Maze {
      */
     public boolean isWall(int row, int col) {
         return maze[row][col] == wall;
-    }
-
-    /**
-     * Creates a new open path space
-     *
-     * @param row
-     * @param col
-     */
-    public void createPath(int row, int col) {
-        maze[row][col] = openSpace;
     }
 
     /**
