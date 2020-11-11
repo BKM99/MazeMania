@@ -36,8 +36,8 @@ public class Maze {
     /**
      * Adds a wall in the desired space
      *
-     * @param row
-     * @param col
+     * @param row the row
+     * @param col the column
      */
     public void addWall(int row, int col) {
         maze[row][col] = wall;
@@ -46,8 +46,8 @@ public class Maze {
     /**
      * Checks if the desired space is a wall
      *
-     * @param row
-     * @param col
+     * @param row the row
+     * @param col the column
      * @return true if wall, false if not
      */
     public boolean isWall(int row, int col) {
@@ -57,8 +57,8 @@ public class Maze {
     /**
      * Checks if the desired space is a path
      *
-     * @param row
-     * @param col
+     * @param row the row
+     * @param col the column
      * @return
      */
     public boolean isPath(int row, int col) {
@@ -68,8 +68,8 @@ public class Maze {
     /**
      * Adds obstacle onto the desired space
      *
-     * @param row
-     * @param col
+     * @param row the row
+     * @param col the column
      */
     public void addObstacle(int row, int col, Obstacle obstacle) {
         maze[row][col] = trap;
@@ -80,8 +80,8 @@ public class Maze {
     /**
      * Checks for obstacles on the desired space
      *
-     * @param row
-     * @param col
+     * @param row the row
+     * @param col the column
      * @return
      */
     public boolean isObstacle(int row, int col) {
