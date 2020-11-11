@@ -5,14 +5,14 @@ package model;
  * player starts at 1 and ends at 2
  * in the maze -1's are walls and 0's are open spaces for the player to move
  * example:
- * maze = {1,0,0,0,0,0,0,0},
+ * maze = {2,0,0,0,0,0,0,0},
  * {0,0,0,0,0,0,0,0},		//this is what the maze looks like by default
  * {0,0,0,0,0,0,0,0},		//player moves from 1 (start) to 2 (end)
  * {0,0,0,0,0,0,0,0},		//we can change the 0's (openSpaces) to -1's (walls) to make the maze more complicated
  * {0,0,0,0,0,0,0,0},		//we can add traps to the openSpaces
  * {0,0,0,0,0,0,0,0},
  * {0,0,0,0,0,0,0,0},
- * {0,0,0,0,0,0,0,2},
+ * {0,0,0,0,0,0,0,1},
  */
 public class Maze {
     int[][] maze;
@@ -29,8 +29,8 @@ public class Maze {
      */
     public Maze() {
         maze = new int[SIZE][SIZE];
-        maze[0][0] = start;
-        maze[SIZE - 1][SIZE - 1] = end;
+        maze[SIZE - 1][SIZE - 1] = start;
+        maze[0][0] = end;
     }
 
     /**
