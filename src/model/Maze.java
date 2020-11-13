@@ -59,7 +59,7 @@ public class Maze {
      *
      * @param row the row
      * @param col the column
-     * @return
+     * @return true if it is an open space, false if not
      */
     public boolean isPath(int row, int col) {
         return maze[row][col] == openSpace;
@@ -82,7 +82,7 @@ public class Maze {
      *
      * @param row the row
      * @param col the column
-     * @return
+     * @return true if it is a obstacle, false if not
      */
     public boolean isObstacle(int row, int col) {
         return maze[row][col] == trap;

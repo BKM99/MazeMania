@@ -71,5 +71,4 @@ public class Maze1 extends Maze {
         addWall(7, 5);
         addWall(7, 6);
     }
-
 }

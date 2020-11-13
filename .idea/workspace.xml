@@ -53,6 +53,14 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
     </configuration>
+    <configuration name="Maze1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="model.Maze1" />
+      <module name="TermProject" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -66,5 +74,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Maze1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1657" height="270" key="GridCell.Tab.0.bottom" timestamp="1605140488353">
+      <screen x="0" y="23" width="1920" height="960" />
+    </state>
+    <state width="1657" height="270" key="GridCell.Tab.0.bottom/0.23.1920.960@0.23.1920.960" timestamp="1605140488353" />
+    <state width="1657" height="270" key="GridCell.Tab.0.center" timestamp="1605140488352">
+      <screen x="0" y="23" width="1920" height="960" />
+    </state>
+    <state width="1657" height="270" key="GridCell.Tab.0.center/0.23.1920.960@0.23.1920.960" timestamp="1605140488352" />
+    <state width="1657" height="270" key="GridCell.Tab.0.left" timestamp="1605140488352">
+      <screen x="0" y="23" width="1920" height="960" />
+    </state>
+    <state width="1657" height="270" key="GridCell.Tab.0.left/0.23.1920.960@0.23.1920.960" timestamp="1605140488352" />
+    <state width="1657" height="270" key="GridCell.Tab.0.right" timestamp="1605140488352">
+      <screen x="0" y="23" width="1920" height="960" />
+    </state>
+    <state width="1657" height="270" key="GridCell.Tab.0.right/0.23.1920.960@0.23.1920.960" timestamp="1605140488352" />
   </component>
 </project>
