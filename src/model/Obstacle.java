@@ -2,8 +2,8 @@ package model;
 
 public interface Obstacle {
 	
-	void addObstacle();
+	void handicap();
 	
-	boolean isObstacle();
+	
 
 }
