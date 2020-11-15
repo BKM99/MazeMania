@@ -1,6 +1,8 @@
 package model;
 
-public class ResetTrap implements Obstacle{
-	void handicap();
+public class ResetTrap extends Player extends Maze implements Obstacle{
+	void handicap() {
+		
+	}
 
 }

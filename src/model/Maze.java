@@ -59,7 +59,12 @@ public class Maze {
      * @param col the column
      */
     public void addObstacle(int row, int col, Obstacle obstacle) {
+<<<<<<< HEAD
 
+=======
+    	maze[row][col] = trap;
+        
+>>>>>>> a69a18e2be9eff393c09a012e84fd5efb1a7ce2b
     }
 
     /**
