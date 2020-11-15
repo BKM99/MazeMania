@@ -49,7 +49,7 @@ public class Player {
      *
      * @param col the column position
      */
-    public void setRowPositon(int col) {
+    public void setColPositon(int col) {
         colPosition = col;
     }
 
