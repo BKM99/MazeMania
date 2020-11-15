@@ -5,7 +5,8 @@ public class Maze {
     int[][] maze;
     int start = 1;
     int end = 2;
-    int trap = 3;
+    int resetTrap = 3;
+    int timerTrap = 4;
     int wall = -1;
     int openSpace = 0; //openSpace is also the path the player takes since everything else is walls
 
@@ -59,12 +60,12 @@ public class Maze {
      * @param col the column
      */
     public void addResetTrap(int row, int col, ResetTrap reset) {
-    	maze[row][col] = trap;
+    	maze[row][col] = resetTrap;
 
     }
     
     public void addTimerTrap(int row, int col, TimerTrap timer) {
-    	maze[row][col] = trap;
+    	maze[row][col] = timerTrap;
     }
 
     /**
@@ -75,11 +76,11 @@ public class Maze {
      * @return true if it is a obstacle, false if not
      */
     public boolean isResetTrap(int row, int col) {
-        return maze[row][col] == trap;
+        return maze[row][col] == resetTrap;
     }
     
     public boolean isTimerTrap(int row, int col) {
-    	return maze[row][col] == trap;
+    	return maze[row][col] == timerTrap;
     }
 
 }
