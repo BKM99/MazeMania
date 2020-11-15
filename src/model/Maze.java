@@ -59,7 +59,7 @@ public class Maze {
      * @param col the column
      */
     public void addObstacle(int row, int col, Obstacle obstacle) {
-
+    	maze[row][col] = trap;
         
     }
 
