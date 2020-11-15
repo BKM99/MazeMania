@@ -36,6 +36,24 @@ public class Player {
     }
 
     /**
+     * Sets a new row position
+     *
+     * @param row the new row position
+     */
+    public void setRowPosition(int row) {
+        rowPosition = row;
+    }
+
+    /**
+     * Sets a new column position
+     *
+     * @param col the column position
+     */
+    public void setRowPositon(int col) {
+        colPosition = col;
+    }
+
+    /**
      * Moves the player up by 1 if there is a path
      */
     public void moveUp() {

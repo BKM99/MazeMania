@@ -1,8 +1,8 @@
 package model;
 
 public class Maze {
-	
-	int[][] maze;
+
+    int[][] maze;
     int start = 1;
     int end = 2;
     int trap = 3;
@@ -60,7 +60,6 @@ public class Maze {
      */
     public void addObstacle(int row, int col, Obstacle obstacle) {
 
-        
     }
 
     /**
