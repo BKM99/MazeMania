@@ -1,8 +1,8 @@
 package model;
 
-public class TimerTrap implements Obstacle{
-	void handicap() {
-		
-	}
+public class TimerTrap implements Obstacle {
+    void handicap() {
+
+    }
 
 }

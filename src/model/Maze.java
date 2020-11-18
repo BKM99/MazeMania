@@ -60,12 +60,12 @@ public class Maze {
      * @param col the column
      */
     public void addResetTrap(int row, int col, ResetTrap reset) {
-    	maze[row][col] = resetTrap;
+        maze[row][col] = resetTrap;
 
     }
-    
+
     public void addTimerTrap(int row, int col, TimerTrap timer) {
-    	maze[row][col] = timerTrap;
+        maze[row][col] = timerTrap;
     }
 
     /**
@@ -78,9 +78,9 @@ public class Maze {
     public boolean isResetTrap(int row, int col) {
         return maze[row][col] == resetTrap;
     }
-    
+
     public boolean isTimerTrap(int row, int col) {
-    	return maze[row][col] == timerTrap;
+        return maze[row][col] == timerTrap;
     }
 
 }
