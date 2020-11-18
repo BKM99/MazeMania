@@ -59,12 +59,12 @@ public class Maze {
      * @param row the row
      * @param col the column
      */
-    public void addResetTrap(int row, int col, ResetTrap reset) {
+    public void addResetTrap(int row, int col, ResetTrap reset) { //adds a reset trap to the maze
     	maze[row][col] = resetTrap;
 
     }
     
-    public void addTimerTrap(int row, int col, TimerTrap timer) {
+    public void addTimerTrap(int row, int col, TimerTrap timer) { //adds a timer trap to the maze
     	maze[row][col] = timerTrap;
     }
 
@@ -75,11 +75,11 @@ public class Maze {
      * @param col the column
      * @return true if it is a obstacle, false if not
      */
-    public boolean isResetTrap(int row, int col) {
+    public boolean isResetTrap(int row, int col) { //test for reset trap
         return maze[row][col] == resetTrap;
     }
     
-    public boolean isTimerTrap(int row, int col) {
+    public boolean isTimerTrap(int row, int col) { //test for timer trap
     	return maze[row][col] == timerTrap;
     }
 
