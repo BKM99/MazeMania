@@ -4,6 +4,11 @@ package model;
  */
 public class Maze3 extends Maze {
 
+	
+	//This maze has 2 traps.
+	ResetTrap r;
+	TimerTrap t;
+	
     public Maze3() {
         super();
         //ROW 0
@@ -16,6 +21,7 @@ public class Maze3 extends Maze {
 
         //ROW 1
         addWall(1,0);
+        addResetTrap(1, 2, r);
         addWall(1,7);
 
         //ROW 2
@@ -43,6 +49,7 @@ public class Maze3 extends Maze {
         addWall(5,7);
 
         //ROW 6
+        addTimerTrap(6, 2, t);
         addWall(6,6);
         addWall(6,7);
 

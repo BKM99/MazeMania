@@ -4,10 +4,18 @@ public class Maze5 extends Maze {
     /**
      * Constructs the fifth maze
      */
+	
+	//This maze contains 4 traps.
+	ResetTrap r1;
+	ResetTrap r2;
+	TimerTrap t1;
+	TimerTrap t2;
+	
     public Maze5() {
         super();
         //ROW 0
         addWall(0, 1);
+        addTimerTrap(0, 5, t2);
 
         //ROW 1
         addWall(1, 1);
@@ -30,13 +38,16 @@ public class Maze5 extends Maze {
 
         //ROW 5
         addWall(5, 1);
+        addTimerTrap(5, 2, t1);
         addWall(5, 6);
 
         //ROW 6
         addWall(6, 1);
         addWall(6, 3);
+        addResetTrap(6, 4, r1);
 
         //ROW 7
+        addResetTrap(7, 0, r2);
         addWall(7, 3);
         addWall(7, 6);
     }
