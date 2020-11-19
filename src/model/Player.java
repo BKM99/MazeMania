@@ -1,9 +1,7 @@
 package model;
 
 public class Player {
-    /**
-     * @param maze the desired maze level
-     */
+
     Maze maze;
     int rowPosition;
     int colPosition;
@@ -11,10 +9,20 @@ public class Player {
     /**
      * Creates a Player starting at (7, 7), the most bottom right point on the Maze
      */
-    public Player(Maze maze) {
-        this.maze = maze;
+    public Player() {
         rowPosition = 7;
         colPosition = 7;
+    }
+
+    /**
+     * Attaches a maze to the player and sets the player position back to the start (7,7)
+     *
+     * @param newMaze the maze that the player is on
+     */
+    public void attachMaze(Maze newMaze) {
+        this.maze = newMaze;
+        setRowPosition(7);
+        setColPositon(7);
     }
 
     /**
