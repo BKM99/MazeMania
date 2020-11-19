@@ -62,42 +62,84 @@ public class Player {
     }
 
     /**
-     * Moves the player up by 1 if there is no wall
+     * Moves the player up by 1
      */
     public void moveUp() {
-        //Checks to maze sure player is not at the very top and that there is not a wall above
-        if (rowPosition > 0 && !maze.isWall(rowPosition - 1, colPosition)) {
-            rowPosition--;
-        }
+        rowPosition--;
     }
 
     /**
-     * Moves the player down by 1 if there is no wall
+     * Checks if there is not a wall above the player and that player is not at the very top
+     *
+     * @return false if player cannot move, true if player can move
+     */
+    public boolean canMoveUp() {
+        if (rowPosition > 0 && !maze.isWall(rowPosition - 1, colPosition)) {
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * Moves the player down by 1
      */
     public void moveDown() {
-        //Checks to maze sure player is not at the very bottom and that there is not a wall below
-        if (rowPosition < 7 && !maze.isWall(rowPosition + 1, colPosition)) {
-            rowPosition++;
-        }
+        rowPosition++;
     }
 
     /**
-     * Moves the player right by 1 if there is no wall
+     * Checks if there is not a wall below the player and that player is not at the very bottom
+     *
+     * @return false if player cannot move, true if player can move
+     */
+    public boolean canMoveDown() {
+        //Checks to maze sure player is not at the very bottom and that there is not a wall below
+        if (rowPosition < 7 && !maze.isWall(rowPosition + 1, colPosition)) {
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * Moves the player right by 1
      */
     public void moveRight() {
-        //Checks to maze sure player is not at the very right and that there is not a wall to the right
-        if (colPosition < 7 && !maze.isWall(rowPosition, colPosition + 1)) {
-            colPosition++;
-        }
+
+        colPosition++;
     }
+
+    /**
+     * Checks if there is no wall to the right of the player and that player is not on the very right
+     *
+     * @return false if player cannot move, true if player can move
+     */
+    public boolean canMoveRight() {
+        if (colPosition < 7 && !maze.isWall(rowPosition, colPosition + 1)) {
+            return true;
+        }
+        return false;
+    }
+
 
     /**
      * Moves the player left by 1 if there is no wall
      */
     public void moveLeft() {
+
+        colPosition--;
+    }
+
+    /**
+     * Checks if there is no wall to the left of the player and that player is not on the very left
+     *
+     * @return false if player cannot move, true if player can move
+     */
+    public boolean canMoveLeft() {
         //Checks to maze sure player is not at the very left and that there is not a wall to the left
         if (colPosition > 0 && !maze.isWall(rowPosition, colPosition - 1)) {
-            colPosition--;
+            return true;
         }
+        return false;
     }
+
 }
