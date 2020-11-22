@@ -52,23 +52,18 @@ public class Maze {
     public boolean isPath(int row, int col) {
         return maze[row][col] == openSpace;
     }
-
     /**
-     * Adds obstacles onto the desired space
-     *
+     * Adds obstacles to the desired space
      * @param row the row
      * @param col the column
      */
-//    public void addResetTrap(int row, int col, ResetTrap reset) { //adds a reset trap to the maze
-//    	maze[row][col] = resetTrap;
-//
-//    }
-//    
-//    public void addTimerTrap(int row, int col, TimerTrap timer) { //adds a timer trap to the maze
-//    	maze[row][col] = timerTrap;
-//
-//    }
-
+    public void addResetTrap(int row, int col) {
+    	maze[row][col] = resetTrap;
+    }
+    
+    public void addTimerTrap(int row, int col) {
+    	maze[row][col] = timerTrap;
+    }
     /**
      * Checks for obstacles on the desired space
      *

@@ -170,6 +170,10 @@ public class Controller {
                 }
 
             }
+            
+            //If player reaches the coordinates of a reset trap
+            
+            //If player reaches the coordinates of a timer trap
 
             return ValveResponse.EXECUTED;
         }
