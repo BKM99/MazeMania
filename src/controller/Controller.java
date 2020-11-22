@@ -160,7 +160,7 @@ public class Controller {
                     player.attachMaze(maze3);
                     state = MazeState.MAZE3_STARTED;
                 } else if (state == MazeState.MAZE3_STARTED) {
-                    //view.gameFrame.changeMaze("Maze4.jpg");
+                    view.gameFrame.changeMaze("Maze4.jpg");
                     player.attachMaze(maze4);
                     state = MazeState.MAZE4_STARTED;
                 } else if (state == MazeState.MAZE4_STARTED) {
