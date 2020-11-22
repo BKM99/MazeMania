@@ -59,15 +59,15 @@ public class Maze {
      * @param row the row
      * @param col the column
      */
-    public void addResetTrap(int row, int col, ResetTrap reset) { //adds a reset trap to the maze
-    	maze[row][col] = resetTrap;
-
-    }
-    
-    public void addTimerTrap(int row, int col, TimerTrap timer) { //adds a timer trap to the maze
-    	maze[row][col] = timerTrap;
-
-    }
+//    public void addResetTrap(int row, int col, ResetTrap reset) { //adds a reset trap to the maze
+//    	maze[row][col] = resetTrap;
+//
+//    }
+//    
+//    public void addTimerTrap(int row, int col, TimerTrap timer) { //adds a timer trap to the maze
+//    	maze[row][col] = timerTrap;
+//
+//    }
 
     /**
      * Checks for obstacles on the desired space
