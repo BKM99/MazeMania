@@ -1,6 +1,9 @@
 package model;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 96e39b9c33758e956d213ee20b686b67d6120e25
 public class ResetTrap extends Player implements Obstacle {
     void handicap(Player p) {
         if (maze.isResetTrap(p.getRowPosition(), p.getColPosition())) {
@@ -10,6 +13,7 @@ public class ResetTrap extends Player implements Obstacle {
     }
 
 
+<<<<<<< HEAD
     public class ResetTrap extends Player implements Obstacle {
 
         //ResetTrap resets the player's position to the starting position
@@ -22,3 +26,6 @@ public class ResetTrap extends Player implements Obstacle {
             }
         }
     }
+=======
+}
+>>>>>>> 96e39b9c33758e956d213ee20b686b67d6120e25
