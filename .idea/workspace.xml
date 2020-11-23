@@ -39,7 +39,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -107,5 +107,9 @@
       <screen x="0" y="23" width="1920" height="960" />
     </state>
     <state width="1657" height="270" key="GridCell.Tab.0.right/0.23.1920.960@0.23.1920.960" timestamp="1605140488352" />
+    <state x="191" y="78" key="SettingsEditor" timestamp="1606015805846">
+      <screen x="0" y="23" width="1920" height="960" />
+    </state>
+    <state x="191" y="78" key="SettingsEditor/0.23.1920.960@0.23.1920.960" timestamp="1606015805846" />
   </component>
 </project>
