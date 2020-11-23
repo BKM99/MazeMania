@@ -42,6 +42,14 @@ public class GameView extends JFrame {
         this.y = y;
         repaint(); //Repaints the dog when the (x, y) coordinates are changed
     }
+    
+    //Updates traps when player reaches given coordinates
+    public void updateResetTrap(int x, int y) {
+    	
+    }
+    public void updateTimerTrap(int x, int y) {
+    	
+    }
 
     /**
      * Sets the dog player icon back to the starting coordinates

@@ -5,11 +5,15 @@ package model;
  */
 public class Maze3 extends Maze {
 
+<<<<<<< HEAD
 
     //This maze has 2 traps.
     //ResetTrap r;
     //TimerTrap t;
 
+=======
+	
+>>>>>>> d99d3341b49e1d2f509ea7afd185cb0120b83ae5
     public Maze3() {
         super();
         //ROW 0
@@ -21,9 +25,15 @@ public class Maze3 extends Maze {
         addWall(0, 7);
 
         //ROW 1
+<<<<<<< HEAD
         addWall(1, 0);
         //addResetTrap(1, 2, r);
         addWall(1, 7);
+=======
+        addWall(1,0);
+        addResetTrap(1, 2);
+        addWall(1,7);
+>>>>>>> d99d3341b49e1d2f509ea7afd185cb0120b83ae5
 
         //ROW 2
         addWall(2, 0);
@@ -50,9 +60,15 @@ public class Maze3 extends Maze {
         addWall(5, 7);
 
         //ROW 6
+<<<<<<< HEAD
         //addTimerTrap(6, 2, t);
         addWall(6, 6);
         addWall(6, 7);
+=======
+        addTimerTrap(6, 2);
+        addWall(6,6);
+        addWall(6,7);
+>>>>>>> d99d3341b49e1d2f509ea7afd185cb0120b83ae5
 
         //ROW 7
         addWall(7, 2);
