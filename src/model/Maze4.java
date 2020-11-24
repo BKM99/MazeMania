@@ -4,26 +4,13 @@ public class Maze4 extends Maze {
     /**
      * Constructs the fourth maze
      */
-<<<<<<< HEAD
 
-    //This maze has 3 traps.
-    //ResetTrap r1;
-    //TimerTrap t1;
-    //TimerTrap t2;
-    public Maze4() {
-        super();
-        //ROW 0
-        //addResetTrap(0, 4, r1);
-        addWall(0, 5);
-        //addTimerTrap(0, 6, t1);
-=======
     public Maze4() {
         super();
         //ROW 0
         addResetTrap(0, 4);
         addWall(0, 5);
         addTimerTrap(0, 6);
->>>>>>> d99d3341b49e1d2f509ea7afd185cb0120b83ae5
 
         //ROW 1
         addWall(1, 1);
@@ -46,11 +33,7 @@ public class Maze4 extends Maze {
 
         //ROW 5
         addWall(5, 3);
-<<<<<<< HEAD
-        //addTimerTrap(5, 4, t2);
-=======
         addTimerTrap(5, 4);
->>>>>>> d99d3341b49e1d2f509ea7afd185cb0120b83ae5
 
         //ROW 6
         addWall(6, 1);
