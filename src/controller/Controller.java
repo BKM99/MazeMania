@@ -172,7 +172,39 @@ public class Controller {
             }
             
             //If player reaches the coordinates of a reset trap
+            if (state == MazeState.MAZE3_STARTED) {
+            	if (player.getRowPosition() == 1 && player.getColPosition() == 2) {
+            		view.gameFrame.resetDog();
+            		player.setRowPosition(7);
+            		player.setColPositon(7);
+            		state = MazeState.MAZE3_STARTED;
+            	}
+            }
             
+            if (state == MazeState.MAZE4_STARTED) {
+            	if (player.getRowPosition() == 0 && player.getColPosition() == 4) {
+            		view.gameFrame.resetDog();
+            		player.setRowPosition(7);
+            		player.setColPositon(7);
+            		state = MazeState.MAZE4_STARTED;
+            	}
+            }
+            
+            if (state == MazeState.MAZE5_STARTED) {
+            	if (player.getRowPosition() == 6 && player.getColPosition() == 4) {
+            		view.gameFrame.resetDog();
+            		player.setRowPosition(7);
+            		player.setColPositon(7);
+            		state = MazeState.MAZE5_STARTED;
+            	}
+            	
+            	if (player.getRowPosition() == 7 && player.getColPosition() == 0) {
+            		view.gameFrame.resetDog();
+            		player.setRowPosition(7);
+            		player.setColPositon(7);
+            		state = MazeState.MAZE5_STARTED;
+            	}
+            }
             //If player reaches the coordinates of a timer trap
 
             return ValveResponse.EXECUTED;
