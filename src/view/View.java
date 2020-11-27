@@ -30,7 +30,6 @@ public class View {
         gameFrame = new GameView();
         JButton newGame = new JButton("New Game");
         JButton pauseButton = new JButton("Pause");
-
         JButton moveComponent = new JButton("Play");
         KeyboardListener listener = new KeyboardListener();
         moveComponent.addKeyListener(listener);
@@ -66,7 +65,7 @@ public class View {
         // TODO: clear all the resources
         // for example, gameFrame.dispose();
     }
-
+    
     private class KeyboardListener implements KeyListener {
 
         public void keyTyped(KeyEvent e) {

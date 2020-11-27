@@ -1,12 +1,15 @@
 package controller;
 
 import model.*;
-import view.View;
-
+import java.awt.*;
 import java.awt.event.KeyEvent;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import view.View;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.concurrent.BlockingQueue;
+import java.util.Timer;
 
 public class Controller {
     private BlockingQueue<Message> queue;
@@ -171,41 +174,22 @@ public class Controller {
 
             }
             
-            //If player reaches the coordinates of a reset trap
-            if (state == MazeState.MAZE3_STARTED) {
-            	if (player.getRowPosition() == 1 && player.getColPosition() == 2) {
-            		view.gameFrame.resetDog();
-            		player.setRowPosition(7);
-            		player.setColPositon(7);
-            		state = MazeState.MAZE3_STARTED;
-            	}
+            //If player reaches the coordinates of a reset trap, reset the player position to the beginning of the maze.
+            
+            Maze currentMaze = player.getMaze();
+            if (currentMaze.isResetTrap(player.getRowPosition(), player.getColPosition())) {
+            	view.gameFrame.resetDog();
+            	player.setRowPosition(7);
+            	player.setColPositon(7);	
             }
             
-            if (state == MazeState.MAZE4_STARTED) {
-            	if (player.getRowPosition() == 0 && player.getColPosition() == 4) {
-            		view.gameFrame.resetDog();
-            		player.setRowPosition(7);
-            		player.setColPositon(7);
-            		state = MazeState.MAZE4_STARTED;
-            	}
-            }
-            
-            if (state == MazeState.MAZE5_STARTED) {
-            	if (player.getRowPosition() == 6 && player.getColPosition() == 4) {
-            		view.gameFrame.resetDog();
-            		player.setRowPosition(7);
-            		player.setColPositon(7);
-            		state = MazeState.MAZE5_STARTED;
-            	}
-            	
-            	if (player.getRowPosition() == 7 && player.getColPosition() == 0) {
-            		view.gameFrame.resetDog();
-            		player.setRowPosition(7);
-            		player.setColPositon(7);
-            		state = MazeState.MAZE5_STARTED;
-            	}
-            }
-            //If player reaches the coordinates of a timer trap
+            //If player reaches the coordinates of a timer trap, disable player movement for 5 seconds.
+//            final int DELAY = 5000; //five second timer
+//            Timer timer = new Timer(DELAY, event -> {
+//            	currentMaze.isTimerTrap(player.getRowPosition(), player.getColPosition());
+//            });
+//            timer.start();
+
 
             return ValveResponse.EXECUTED;
         }

@@ -24,6 +24,15 @@ public class Player {
         setRowPosition(7);
         setColPositon(7);
     }
+    
+    /**
+     * Returns attached maze
+     * 
+     * @return the attached maze
+     */
+    public Maze getMaze() {
+    	return maze;
+    }
 
     /**
      * Gets the current row position of the player
