@@ -183,12 +183,21 @@ public class Controller {
             	player.setColPositon(7);	
             }
             
-            //If player reaches the coordinates of a timer trap, disable player movement for 5 seconds.
-//            final int DELAY = 5000; //five second timer
-//            Timer timer = new Timer(DELAY, event -> {
-//            	currentMaze.isTimerTrap(player.getRowPosition(), player.getColPosition());
-//            });
-//            timer.start();
+//            //If player reaches the coordinates of a timer trap, disable player movement for 5 seconds.
+//            ActionListener timerListener = new ActionListener() {
+//            	final int DELAY = 5000;
+//            	Timer t = new Timer(DELAY, timerListener);
+//            	public void actionPerformed(ActionEvent e) {
+//            		if (currentMaze.isTimerTrap(player.getRowPosition(), player.getColPosition())) {
+//            			//disable player movement. not sure about implementation.
+//            			t.start();
+//            		} else {
+//            			//make sure player can move
+//            			t.stop();
+//            		}
+//            	}
+//            };
+            
 
 
             return ValveResponse.EXECUTED;
