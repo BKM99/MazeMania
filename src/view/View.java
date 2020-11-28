@@ -2,7 +2,6 @@ package view;
 
 import controller.Message;
 import controller.MoveMessage;
-import controller.NewGameMessage;
 
 import javax.swing.*;
 import java.awt.*;
@@ -33,16 +32,7 @@ public class View {
         JButton moveComponent = new JButton("Play");
         KeyboardListener listener = new KeyboardListener();
         moveComponent.addKeyListener(listener);
-
-
-        //STARTER CODE EXAMPLE BUTTONS
-        newGame.addActionListener(event -> {
-            try {
-                this.queue.put(new NewGameMessage()); // <--- adding NewGame message to the queue
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        });
+        
 
         // add everything and set layout and other standard JFrame settings
         gameFrame.add(newGame);
@@ -65,7 +55,7 @@ public class View {
         // TODO: clear all the resources
         // for example, gameFrame.dispose();
     }
-    
+
     private class KeyboardListener implements KeyListener {
 
         public void keyTyped(KeyEvent e) {

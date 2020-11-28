@@ -28,8 +28,7 @@ public class Controller {
     public Controller(View view, BlockingQueue<Message> queue) {
         this.view = view;
         this.queue = queue;
-        valves.add(new DoNewGameValve());
-        valves.add(new DoHitValve());
+
         valves.add(new NewMoveValve());
 
         player = new Player();
@@ -74,31 +73,6 @@ public class Controller {
          * Performs certain action in response to message
          */
         public ValveResponse execute(Message message);
-    }
-
-    private class DoNewGameValve implements Valve {
-        @Override
-        public ValveResponse execute(Message message) {
-            if (message.getClass() != NewGameMessage.class) {
-                return ValveResponse.MISS;
-            }
-            // otherwise it means that it is a NewGameMessage message
-            // actions in Model
-            // actions in View
-            return ValveResponse.EXECUTED;
-        }
-    }
-
-    private class DoHitValve implements Valve {
-        @Override
-        public ValveResponse execute(Message message) {
-            if (message.getClass() != HitMessage.class) {
-                return ValveResponse.MISS;
-            }
-            // otherwise message is of HitMessage type
-            // actions in Model and View
-            return ValveResponse.EXECUTED;
-        }
     }
 
     private class NewMoveValve implements Valve {
