@@ -25,6 +25,12 @@ public class Controller {
 
     private MazeState state;
 
+    /**
+     * Creates a controller
+     *
+     * @param view  the view
+     * @param queue blocking queue
+     */
     public Controller(View view, BlockingQueue<Message> queue) {
         this.view = view;
         this.queue = queue;
@@ -75,8 +81,16 @@ public class Controller {
         public ValveResponse execute(Message message);
     }
 
+    /**
+     * Creates a new move valve
+     */
     private class NewMoveValve implements Valve {
-
+        /**
+         * Moves the player and executes actions based on where they moved
+         *
+         * @param message the message
+         * @return MISS if message is not a move message, EXECUTED with correct valve response if is a move message
+         */
         public ValveResponse execute(Message message) {
             if (message.getClass() != MoveMessage.class) {
                 return ValveResponse.MISS;
@@ -91,7 +105,6 @@ public class Controller {
                 if (player.canMoveLeft()) {
                     player.moveLeft();
                     view.gameFrame.updateDog(view.gameFrame.getX() - 75, view.gameFrame.getY());
-                    System.out.println(player.getRowPosition() + " " + player.getColPosition());
                 }
 
             }
@@ -101,7 +114,6 @@ public class Controller {
                 if (player.canMoveRight()) {
                     player.moveRight();
                     view.gameFrame.updateDog(view.gameFrame.getX() + 75, view.gameFrame.getY());
-                    System.out.println(player.getRowPosition() + " " + player.getColPosition());
                 }
 
             }
@@ -111,7 +123,6 @@ public class Controller {
                 if (player.canMoveUp()) {
                     player.moveUp();
                     view.gameFrame.updateDog(view.gameFrame.getX(), view.gameFrame.getY() - 75);
-                    System.out.println(player.getRowPosition() + " " + player.getColPosition());
                 }
             }
 
@@ -120,7 +131,6 @@ public class Controller {
                 if (player.canMoveDown()) {
                     player.moveDown();
                     view.gameFrame.updateDog(view.gameFrame.getX(), view.gameFrame.getY() + 75);
-                    System.out.println(player.getRowPosition() + " " + player.getColPosition());
                 }
 
             }

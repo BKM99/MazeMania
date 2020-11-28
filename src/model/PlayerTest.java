@@ -4,6 +4,9 @@ import org.junit.*;
 
 import static org.junit.Assert.*;
 
+/**
+ * Unit test class for class Player
+ */
 public class PlayerTest {
 
     @Test

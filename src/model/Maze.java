@@ -13,7 +13,7 @@ public class Maze {
     private static final int SIZE = 8;
 
     /**
-     * Constructs a 8 x 8 Maze
+     * Constructs a 8 x 8 Maze with a start at [7][7] and end at [0][0]
      */
     public Maze() {
         maze = new int[SIZE][SIZE];
@@ -52,31 +52,47 @@ public class Maze {
     public boolean isPath(int row, int col) {
         return maze[row][col] == openSpace;
     }
+
     /**
-     * Adds obstacles to the desired space
+     * Adds a reset trap to the desired space
+     *
      * @param row the row
      * @param col the column
      */
     public void addResetTrap(int row, int col) {
-    	maze[row][col] = resetTrap;
+        maze[row][col] = resetTrap;
     }
-    
-    public void addTimerTrap(int row, int col) {
-    	maze[row][col] = timerTrap;
-    }
+
     /**
-     * Checks for obstacles on the desired space
+     * Adds a timer trap to the desired space
+     *
+     * @param row the row
+     * @param col the col
+     */
+    public void addTimerTrap(int row, int col) {
+        maze[row][col] = timerTrap;
+    }
+
+    /**
+     * Checks for reset trap on the desired space
      *
      * @param row the row
      * @param col the column
-     * @return true if it is a obstacle, false if not
+     * @return true if it is a reset trap, false if not
      */
-    public boolean isResetTrap(int row, int col) { //test for reset trap
+    public boolean isResetTrap(int row, int col) {
         return maze[row][col] == resetTrap;
     }
- 
-    public boolean isTimerTrap(int row, int col) { //test for timer trap
-    	return maze[row][col] == timerTrap;
+
+    /**
+     * Checks for timer trap on the desired space
+     *
+     * @param row the row
+     * @param col the col
+     * @return true if it is a timer trap, false if not
+     */
+    public boolean isTimerTrap(int row, int col) {
+        return maze[row][col] == timerTrap;
 
     }
 
