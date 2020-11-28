@@ -22,16 +22,16 @@ public class Player {
     public void attachMaze(Maze newMaze) {
         this.maze = newMaze;
         setRowPosition(7);
-        setColPositon(7);
+        setColPosition(7);
     }
-    
+
     /**
      * Returns attached maze
-     * 
+     *
      * @return the attached maze
      */
     public Maze getMaze() {
-    	return maze;
+        return maze;
     }
 
     /**
@@ -66,7 +66,7 @@ public class Player {
      *
      * @param col the column position
      */
-    public void setColPositon(int col) {
+    public void setColPosition(int col) {
         colPosition = col;
     }
 

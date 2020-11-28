@@ -175,14 +175,14 @@ public class Controller {
             }
 
             //If player reaches the coordinates of a reset trap, reset the player position to the beginning of the maze.
-            
+
             Maze currentMaze = player.getMaze();
             if (currentMaze.isResetTrap(player.getRowPosition(), player.getColPosition())) {
-            	view.gameFrame.resetDog();
-            	player.setRowPosition(7);
-            	player.setColPositon(7);	
+                view.gameFrame.resetDog();
+                player.setRowPosition(7);
+                player.setColPosition(7);
             }
-            
+
 //            //If player reaches the coordinates of a timer trap, disable player movement for 5 seconds.
 //            ActionListener timerListener = new ActionListener() {
 //            	final int DELAY = 5000;
@@ -197,7 +197,6 @@ public class Controller {
 //            		}
 //            	}
 //            };
-            
 
 
             return ValveResponse.EXECUTED;
@@ -206,7 +205,7 @@ public class Controller {
 
     public void displayMessage() throws Exception {
         //Prints a victory message after 5th maze is complete
-        if(state == MazeState.MAZE5_STARTED && player.getColPosition() == 0 && player.getRowPosition() == 0) {
+        if (state == MazeState.MAZE5_STARTED && player.getColPosition() == 0 && player.getRowPosition() == 0) {
             new VictoryMessageView();
         }
     }
