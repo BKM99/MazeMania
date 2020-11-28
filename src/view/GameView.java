@@ -28,7 +28,6 @@ public class GameView extends JFrame {
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
-
     }
 
     /**

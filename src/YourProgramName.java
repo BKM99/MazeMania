@@ -9,7 +9,7 @@ public class YourProgramName {
     private static BlockingQueue<Message> queue = new LinkedBlockingQueue<>();
     private static View view;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         view = View.init(queue);
         Controller controller = new Controller(view, queue);
 

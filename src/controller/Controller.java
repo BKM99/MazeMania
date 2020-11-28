@@ -1,15 +1,13 @@
 package controller;
 
 import model.*;
-import java.awt.*;
-import java.awt.event.KeyEvent;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import view.VictoryMessageView;
 import view.View;
+
+import java.awt.event.KeyEvent;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.concurrent.BlockingQueue;
-import java.util.Timer;
 
 public class Controller {
     private BlockingQueue<Message> queue;
@@ -45,7 +43,7 @@ public class Controller {
         state = MazeState.MAZE1_STARTED;
     }
 
-    public void mainLoop() {
+    public void mainLoop() throws Exception {
         ValveResponse response = ValveResponse.EXECUTED;
         Message message = null;
         while (response != ValveResponse.FINISH) {
@@ -62,6 +60,8 @@ public class Controller {
                     break;
                 }
             }
+            //displays the victory message
+            displayMessage();
         }
     }
 
@@ -173,7 +173,7 @@ public class Controller {
                 }
 
             }
-            
+
             //If player reaches the coordinates of a reset trap, reset the player position to the beginning of the maze.
             
             Maze currentMaze = player.getMaze();
@@ -204,6 +204,11 @@ public class Controller {
         }
     }
 
-
+    public void displayMessage() throws Exception {
+        //Prints a victory message after 5th maze is complete
+        if(state == MazeState.MAZE5_STARTED && player.getColPosition() == 0 && player.getRowPosition() == 0) {
+            new VictoryMessageView();
+        }
+    }
 }
 
