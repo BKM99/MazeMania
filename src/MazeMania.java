@@ -5,7 +5,7 @@ import view.View;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
-public class YourProgramName {
+public class MazeMania {
     private static BlockingQueue<Message> queue = new LinkedBlockingQueue<>();
     private static View view;
 
