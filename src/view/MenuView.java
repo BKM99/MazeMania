@@ -14,7 +14,7 @@ public class MenuView extends JFrame
     JButton rules;
     ImageIcon image = new ImageIcon("mazeManiaMenu.png");
 
-    int clicked = 0;
+    private int clicked = 0;
 
     public MenuView() {
 

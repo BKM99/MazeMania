@@ -29,7 +29,7 @@ public class View {
 
         menu = new MenuView();
         gameFrame = new GameView();
-        while(menu.clicked == 0) {
+        while(menu.getClicked() == 0) {
             System.out.println("in main menu");
         }
         loadGame();
