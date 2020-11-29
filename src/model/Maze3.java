@@ -20,9 +20,7 @@ public class Maze3 extends Maze {
         //ROW 1
         addWall(1, 0);
         addWall(1, 7);
-        addWall(1,0);
-        addResetTrap(1, 2);
-        addWall(1,7);
+
 
         //ROW 2
         addWall(2, 0);
@@ -51,9 +49,9 @@ public class Maze3 extends Maze {
         //ROW 6
         addWall(6, 6);
         addWall(6, 7);
-        addTimerTrap(6, 2);
-        addWall(6,6);
-        addWall(6,7);
+        addResetTrap(6, 0);
+        addTimerTrap(6, 1);
+
 
         //ROW 7
         addWall(7, 2);

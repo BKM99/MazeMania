@@ -2,8 +2,10 @@ package controller;
 
 import model.*;
 import view.VictoryMessageView;
+import view.TimerTrapView;
 import view.View;
-
+import javax.swing.*;
+import java.awt.event.*;
 import java.awt.event.KeyEvent;
 import java.util.LinkedList;
 import java.util.List;
@@ -167,20 +169,8 @@ public class Controller {
                 player.setColPosition(7);
             }
 
-//            //If player reaches the coordinates of a timer trap, disable player movement for 5 seconds.
-//            ActionListener timerListener = new ActionListener() {
-//            	final int DELAY = 5000;
-//            	Timer t = new Timer(DELAY, timerListener);
-//            	public void actionPerformed(ActionEvent e) {
-//            		if (currentMaze.isTimerTrap(player.getRowPosition(), player.getColPosition())) {
-//            			//disable player movement. not sure about implementation.
-//            			t.start();
-//            		} else {
-//            			//make sure player can move
-//            			t.stop();
-//            		}
-//            	}
-//            };
+            
+            
 
 
             return ValveResponse.EXECUTED;
@@ -188,6 +178,12 @@ public class Controller {
     }
 
     public void displayMessage() throws Exception {
+    	Maze currentMaze = player.getMaze();
+    	//Timer trap shows message blocking player movement and visibility for 5 seconds when player hits a trap location.
+    	if (currentMaze.isTimerTrap(player.getRowPosition(), player.getColPosition())) {
+    		new TimerTrapView();
+    	}
+    	
         //Prints a victory message after 5th maze is complete
         if (state == MazeState.MAZE5_STARTED && player.getColPosition() == 0 && player.getRowPosition() == 0) {
             new VictoryMessageView();
