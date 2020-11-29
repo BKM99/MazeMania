@@ -11,6 +11,7 @@ import java.util.concurrent.BlockingQueue;
 
 public class View {
     public GameView gameFrame;
+    public MenuView menu;
     private BlockingQueue<Message> queue;
 
     public static View init(BlockingQueue<Message> queue) {
@@ -26,13 +27,21 @@ public class View {
         // JFrame can be in a separate class or created JFrame with all the elements in this class
         // or you can make View a subclass of JFrame by extending it
 
+        menu = new MenuView();
         gameFrame = new GameView();
+        while(menu.clicked == 0) {
+            System.out.println("in main menu");
+        }
+        loadGame();
+        System.out.println("game loaded");
+    }
+
+    public void loadGame() {
         JButton newGame = new JButton("New Game");
         JButton pauseButton = new JButton("Pause");
         JButton moveComponent = new JButton("Play");
-        KeyboardListener listener = new KeyboardListener();
+        View.KeyboardListener listener = new View.KeyboardListener();
         moveComponent.addKeyListener(listener);
-        
 
         // add everything and set layout and other standard JFrame settings
         gameFrame.add(newGame);
@@ -44,19 +53,17 @@ public class View {
         gameFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         gameFrame.setVisible(true);
     }
-
     public void change() {
         // TODO: do all the updates and repaint
         //gameFrame.repaint();
     }
-
 
     public void dispose() {
         // TODO: clear all the resources
         // for example, gameFrame.dispose();
     }
 
-    private class KeyboardListener implements KeyListener {
+    public class KeyboardListener implements KeyListener {
 
         public void keyTyped(KeyEvent e) {
 

@@ -21,9 +21,26 @@
   <component name="ChangeListManager">
     <list default="true" id="6e093ecd-ac9d-40c9-b8a4-05d2e687e858" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/YourProgramName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/YourProgramName.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/GameView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/GameView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TermProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TermProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TermProject/controller/Controller$NewMoveValve.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TermProject/controller/Controller$NewMoveValve.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TermProject/controller/Controller$Valve.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TermProject/controller/Controller$Valve.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TermProject/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TermProject/controller/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TermProject/controller/GameInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TermProject/controller/GameInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TermProject/controller/MazeState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TermProject/controller/MazeState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TermProject/controller/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TermProject/controller/Message.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TermProject/controller/MoveMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TermProject/controller/MoveMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TermProject/controller/ValveResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TermProject/controller/ValveResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TermProject/model/Maze.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TermProject/model/Maze.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TermProject/model/Maze1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TermProject/model/Maze1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TermProject/model/Maze2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TermProject/model/Maze2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TermProject/model/Maze3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TermProject/model/Maze3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TermProject/model/Maze4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TermProject/model/Maze4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TermProject/model/Maze5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TermProject/model/Maze5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TermProject/model/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TermProject/model/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TermProject/view/GameView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TermProject/view/GameView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TermProject/view/View$KeyboardListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TermProject/view/View$KeyboardListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TermProject/view/View.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TermProject/view/View.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/View.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,38 +83,36 @@
     <option name="sortByType" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/view" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.YourProgramName">
-    <configuration default="true" type="TestNG">
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Maze1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="model.Maze1" />
+  <component name="RunManager" selected="Application.MazeMania">
+    <configuration name="MazeMania" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MazeMania" />
       <module name="TermProject" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="view.Test" />
+    <configuration name="MenuView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="view.MenuView" />
       <module name="TermProject" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -110,8 +125,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VictoryMessageView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="view.VictoryMessageView" />
+    <configuration name="RulesView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="view.RulesView" />
+      <module name="TermProject" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="view.Test" />
       <module name="TermProject" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -145,16 +174,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.YourProgramName" />
-        <item itemvalue="Application.VictoryMessageView" />
+        <item itemvalue="Application.MazeMania" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.Maze1" />
+        <item itemvalue="Application.RulesView" />
+        <item itemvalue="Application.MenuView" />
+        <item itemvalue="Application.YourProgramName" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="6e093ecd-ac9d-40c9-b8a4-05d2e687e858" name="Default Changelist" comment="" />
@@ -178,29 +217,49 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1140" height="95" key="GridCell.Tab.0.bottom" timestamp="1606526739366">
+    <state width="1238" height="199" key="GridCell.Tab.0.bottom" timestamp="1606645852117">
       <screen x="0" y="23" width="1280" height="733" />
     </state>
-    <state width="1140" height="95" key="GridCell.Tab.0.bottom/0.23.1280.733@0.23.1280.733" timestamp="1606526739366" />
+    <state width="1238" height="199" key="GridCell.Tab.0.bottom/0.23.1280.733@0.23.1280.733" timestamp="1606645852117" />
     <state width="1657" height="270" key="GridCell.Tab.0.bottom/0.23.1920.960@0.23.1920.960" timestamp="1605140488353" />
-    <state width="1140" height="95" key="GridCell.Tab.0.center" timestamp="1606526739365">
+    <state width="1238" height="199" key="GridCell.Tab.0.center" timestamp="1606645852117">
       <screen x="0" y="23" width="1280" height="733" />
     </state>
-    <state width="1140" height="95" key="GridCell.Tab.0.center/0.23.1280.733@0.23.1280.733" timestamp="1606526739365" />
+    <state width="1238" height="199" key="GridCell.Tab.0.center/0.23.1280.733@0.23.1280.733" timestamp="1606645852117" />
     <state width="1657" height="270" key="GridCell.Tab.0.center/0.23.1920.960@0.23.1920.960" timestamp="1605140488352" />
-    <state width="1140" height="95" key="GridCell.Tab.0.left" timestamp="1606526739364">
+    <state width="1238" height="199" key="GridCell.Tab.0.left" timestamp="1606645852116">
       <screen x="0" y="23" width="1280" height="733" />
     </state>
-    <state width="1140" height="95" key="GridCell.Tab.0.left/0.23.1280.733@0.23.1280.733" timestamp="1606526739364" />
+    <state width="1238" height="199" key="GridCell.Tab.0.left/0.23.1280.733@0.23.1280.733" timestamp="1606645852116" />
     <state width="1657" height="270" key="GridCell.Tab.0.left/0.23.1920.960@0.23.1920.960" timestamp="1605140488352" />
-    <state width="1140" height="95" key="GridCell.Tab.0.right" timestamp="1606526739366">
+    <state width="1238" height="199" key="GridCell.Tab.0.right" timestamp="1606645852117">
       <screen x="0" y="23" width="1280" height="733" />
     </state>
-    <state width="1140" height="95" key="GridCell.Tab.0.right/0.23.1280.733@0.23.1280.733" timestamp="1606526739366" />
+    <state width="1238" height="199" key="GridCell.Tab.0.right/0.23.1280.733@0.23.1280.733" timestamp="1606645852117" />
     <state width="1657" height="270" key="GridCell.Tab.0.right/0.23.1920.960@0.23.1920.960" timestamp="1605140488352" />
+    <state width="1238" height="228" key="GridCell.Tab.1.bottom" timestamp="1606634394342">
+      <screen x="0" y="23" width="1280" height="733" />
+    </state>
+    <state width="1238" height="228" key="GridCell.Tab.1.bottom/0.23.1280.733@0.23.1280.733" timestamp="1606634394342" />
+    <state width="1238" height="228" key="GridCell.Tab.1.center" timestamp="1606634394341">
+      <screen x="0" y="23" width="1280" height="733" />
+    </state>
+    <state width="1238" height="228" key="GridCell.Tab.1.center/0.23.1280.733@0.23.1280.733" timestamp="1606634394341" />
+    <state width="1238" height="228" key="GridCell.Tab.1.left" timestamp="1606634394339">
+      <screen x="0" y="23" width="1280" height="733" />
+    </state>
+    <state width="1238" height="228" key="GridCell.Tab.1.left/0.23.1280.733@0.23.1280.733" timestamp="1606634394339" />
+    <state width="1238" height="228" key="GridCell.Tab.1.right" timestamp="1606634394341">
+      <screen x="0" y="23" width="1280" height="733" />
+    </state>
+    <state width="1238" height="228" key="GridCell.Tab.1.right/0.23.1280.733@0.23.1280.733" timestamp="1606634394341" />
     <state x="191" y="78" key="SettingsEditor" timestamp="1606015805846">
       <screen x="0" y="23" width="1920" height="960" />
     </state>
     <state x="191" y="78" key="SettingsEditor/0.23.1920.960@0.23.1920.960" timestamp="1606015805846" />
+    <state x="425" y="235" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1606627273764">
+      <screen x="0" y="23" width="1280" height="733" />
+    </state>
+    <state x="425" y="235" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.23.1280.733@0.23.1280.733" timestamp="1606627273764" />
   </component>
 </project>
