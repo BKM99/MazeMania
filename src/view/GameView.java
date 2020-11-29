@@ -20,8 +20,8 @@ public class GameView extends JFrame {
      * Constructs a new game view
      */
     public GameView() {
-        this.x = 600;
-        this.y = 600;
+        this.x = 625;
+        this.y = 635;
 
         try {
             dogImage = ImageIO.read(new File("doge.png"));
@@ -46,8 +46,8 @@ public class GameView extends JFrame {
      * Sets the dog player icon back to the starting coordinates
      */
     public void resetDog() {
-        x = 600;
-        y = 600;
+        x = 625;
+        y = 635;
     }
 
     /**
