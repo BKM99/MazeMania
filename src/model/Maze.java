@@ -1,5 +1,8 @@
 package model;
 
+/**
+ * Models a 8x8 Maze
+ */
 public class Maze {
 
     int[][] maze;

@@ -1,16 +1,18 @@
 package model;
 
+/**
+ * Models the fifth maze
+ */
 public class Maze5 extends Maze {
     /**
      * Constructs the fifth maze
      */
-	
     public Maze5() {
         super();
         //ROW 0
         addWall(0, 1);
         addTimerTrap(0, 5);
-        
+
         //ROW 1
         addWall(1, 1);
         addWall(1, 2);

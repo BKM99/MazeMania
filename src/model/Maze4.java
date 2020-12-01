@@ -1,10 +1,12 @@
 package model;
 
+/**
+ * Models the fourth maze
+ */
 public class Maze4 extends Maze {
     /**
      * Constructs the fourth maze
      */
-
     public Maze4() {
         super();
         //ROW 0

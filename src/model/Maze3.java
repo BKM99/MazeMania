@@ -1,12 +1,12 @@
 package model;
 
 /**
- * Constructs the third maze
+ * Models the third maze
  */
 public class Maze3 extends Maze {
-
-
-	
+    /**
+     * Constructs the third maze
+     */
     public Maze3() {
         super();
         //ROW 0

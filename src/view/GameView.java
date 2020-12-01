@@ -7,6 +7,9 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
+/**
+ * Generates a maze game view
+ */
 public class GameView extends JFrame {
     BufferedImage mazeImage;
     JLabel background;

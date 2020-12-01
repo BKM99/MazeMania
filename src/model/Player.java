@@ -1,5 +1,8 @@
 package model;
 
+/**
+ * Models a player on a maze
+ */
 public class Player {
 
     Maze maze;

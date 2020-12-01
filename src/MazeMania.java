@@ -5,6 +5,9 @@ import view.View;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
+/**
+ * Runs the MazeMania game
+ */
 public class MazeMania {
     private static BlockingQueue<Message> queue = new LinkedBlockingQueue<>();
     private static View view;

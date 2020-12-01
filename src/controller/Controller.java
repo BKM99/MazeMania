@@ -1,20 +1,21 @@
 package controller;
 
 import model.*;
-import view.VictoryMessageView;
 import view.TimerTrapView;
+import view.VictoryMessageView;
 import view.View;
-import javax.swing.*;
-import java.awt.event.*;
+
 import java.awt.event.KeyEvent;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.concurrent.BlockingQueue;
 
+/**
+ * Class which updates the view and model
+ */
 public class Controller {
     private BlockingQueue<Message> queue;
     private View view; // Direct reference to view
-    private GameInfo gameInfo; // Direct reference to the state of the Game/Application
 
     private List<Valve> valves = new LinkedList<Valve>();
 
@@ -25,7 +26,7 @@ public class Controller {
     private Maze4 maze4;
     private Maze5 maze5;
 
-    private MazeState state;
+    private MazeState state; // Direct reference to the state of the Mazes
 
     /**
      * Creates a controller
@@ -70,10 +71,6 @@ public class Controller {
             //displays the victory message
             displayMessage();
         }
-    }
-
-    private void updateGameInfo() {
-
     }
 
     private interface Valve {
@@ -169,21 +166,18 @@ public class Controller {
                 player.setColPosition(7);
             }
 
-            
-            
-
 
             return ValveResponse.EXECUTED;
         }
     }
 
     public void displayMessage() throws Exception {
-    	Maze currentMaze = player.getMaze();
-    	//Timer trap shows message blocking player movement and visibility for 5 seconds when player hits a trap location.
-    	if (currentMaze.isTimerTrap(player.getRowPosition(), player.getColPosition())) {
-    		new TimerTrapView();
-    	}
-    	
+        Maze currentMaze = player.getMaze();
+        //Timer trap shows message blocking player movement and visibility for 5 seconds when player hits a trap location.
+        if (currentMaze.isTimerTrap(player.getRowPosition(), player.getColPosition())) {
+            new TimerTrapView();
+        }
+
         //Prints a victory message after 5th maze is complete
         if (state == MazeState.MAZE5_STARTED && player.getColPosition() == 0 && player.getRowPosition() == 0) {
             new VictoryMessageView();

@@ -1,5 +1,8 @@
 package model;
 
+/**
+ * Models the first maze
+ */
 public class Maze1 extends Maze {
     /**
      * Constructs the first maze
