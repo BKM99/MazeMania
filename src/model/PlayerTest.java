@@ -9,6 +9,9 @@ import static org.junit.Assert.*;
  */
 public class PlayerTest {
 
+    /**
+     * Tests whether setRowPosition() successfully changes the row position
+     */
     @Test
     public void testSetRowPosition() {
         Player testPlayer = new Player();
@@ -16,6 +19,9 @@ public class PlayerTest {
         assertTrue("Row position not set correctly", testPlayer.getRowPosition() == 3);
     }
 
+    /**
+     * Tests whether setColPosition() successfully changes the col position
+     */
     @Test
     public void testSetColPosition() {
         Player testPlayer = new Player();
@@ -23,6 +29,9 @@ public class PlayerTest {
         assertTrue("Col position not set correctly", testPlayer.getColPosition() == 3);
     }
 
+    /**
+     * Tests whether moveUp() successfully moves the player up
+     */
     @Test
     public void testMoveUp() {
         Player testPlayer = new Player();
@@ -31,6 +40,9 @@ public class PlayerTest {
 
     }
 
+    /**
+     * Tests whether moveDown() successfully moves the player down
+     */
     @Test
     public void testMoveDown() {
         Player testPlayer = new Player();
@@ -39,6 +51,9 @@ public class PlayerTest {
         assertTrue("Row position needs to increase by 1", testPlayer.getRowPosition() == 7);
     }
 
+    /**
+     * Tests whether moveRight() successfully moves the player right
+     */
     @Test
     public void testMoveRight() {
         Player testPlayer = new Player();
@@ -47,6 +62,9 @@ public class PlayerTest {
         assertTrue("Row position needs to increase by 1", testPlayer.getColPosition() == 7);
     }
 
+    /**
+     * Tests whether moveLeft() successfully moves the player left
+     */
     @Test
     public void testMoveLeft() {
         Player testPlayer = new Player();

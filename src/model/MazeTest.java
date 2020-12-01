@@ -9,6 +9,9 @@ import static org.junit.Assert.*;
  */
 public class MazeTest {
 
+    /**
+     * Tests whether addWall() method successfully creates a wall
+     */
     @Test
     public void testAddWall() {
         Maze testMaze = new Maze();
@@ -16,6 +19,9 @@ public class MazeTest {
         assertTrue(testMaze.maze[2][2] == -1);
     }
 
+    /**
+     * Tests whether addResetTrap() method successfully creates a reset trap
+     */
     @Test
     public void testAddResetTrap() {
         Maze testMaze = new Maze();
@@ -23,6 +29,9 @@ public class MazeTest {
         assertTrue(testMaze.maze[2][2] == 3);
     }
 
+    /**
+     * Tests whether addTimerTrap() method successfully creates a timer trap
+     */
     @Test
     public void testAddTimerTrap() {
         Maze testMaze = new Maze();
