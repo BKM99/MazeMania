@@ -1,5 +1,8 @@
 package controller;
 
+/**
+ * Message which represents the player has moved
+ */
 public class MoveMessage implements Message {
     int keyCode;
 
