@@ -7,7 +7,10 @@ import java.awt.event.ActionListener;
 import javax.swing.*;
 
 public class TimerTrapView extends JFrame {
-	//class enables a physical view timed trap for the maze
+	/**
+     * Constructs a Timer Trap message window. Is displayed when player reaches coordinates of timer trap.
+     * @throws Exception
+     */
 	JLabel message = new JLabel("Oops, you stepped on a trap! Please wait 5 seconds before continuing");
 	JPanel panel = new JPanel();
 	

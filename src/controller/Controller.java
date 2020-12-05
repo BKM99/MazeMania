@@ -173,6 +173,13 @@ public class Controller {
     
     //Displays 2 types of messages depending on events in the game: a timer trap, and a victory message when finishing game
     public void displayMessage() throws Exception {
+    	/**
+    	 * Returns a TimerTrapView message window if player reaches a timer trap coordinate.
+    	 * Returns a VictoryMessageView message window when player reaches the end of Maze5.
+    	 * 
+    	 * @throws Exception
+    	 * @return TimerTrapView if player reaches timer trap, VictoryMessageView when at the end of Maze5
+    	 */
         Maze currentMaze = player.getMaze();
         //Timer trap shows message blocking player movement and visibility for 5 seconds when player hits a trap location.
         if (currentMaze.isTimerTrap(player.getRowPosition(), player.getColPosition())) {
