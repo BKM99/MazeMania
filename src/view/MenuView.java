@@ -16,6 +16,9 @@ public class MenuView extends JFrame
 
     private int clicked = 0;
 
+    /**
+     * Constructs a new MenuView
+     */
     public MenuView() {
 
         setSize(image.getIconWidth(),image.getIconHeight());
@@ -43,6 +46,11 @@ public class MenuView extends JFrame
         //making the buttons work
         start.addActionListener(new ActionListener() {
             @Override
+            /**
+             * This method gives the start button its functionality
+             * @param ActionEvent e
+             *
+             */
             public void actionPerformed(ActionEvent e) {
                 setVisible(false);
                 dispose();
@@ -50,6 +58,11 @@ public class MenuView extends JFrame
                 System.out.println("clicked");
             }
         });
+        /**
+         * This method gives the rules button its functionality
+         * @param ActionEvent e
+         *
+         */
         rules.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -66,6 +79,10 @@ public class MenuView extends JFrame
         setVisible(true);
     }
 
+    /**
+     * Gets clicked, clicked is used to make the start button function
+     * @return returns clicked
+     */
     public int getClicked() {
         return clicked;
     }

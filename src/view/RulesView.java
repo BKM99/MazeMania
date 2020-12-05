@@ -5,6 +5,9 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * This is displays the rules page for the user
+ */
 public class RulesView extends JFrame {
     JLabel welcome;
     JLabel rule1;
@@ -18,7 +21,9 @@ public class RulesView extends JFrame {
     JButton back = new JButton("back");
     JPanel panel = new JPanel();
 
-
+    /**
+     * This constructs a new RulesVuew
+     */
     public RulesView() {
         setSize(640,640);
         setTitle("Rules");
@@ -59,6 +64,11 @@ public class RulesView extends JFrame {
         //making the back button work
         back.addActionListener(new ActionListener() {
             @Override
+            /**
+             * This method gives the back button its functionality
+             * @param ActionEvent e
+             *
+             */
             public void actionPerformed(ActionEvent e) {
                 setVisible(false);
                 new MenuView();

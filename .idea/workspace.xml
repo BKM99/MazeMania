@@ -21,26 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6e093ecd-ac9d-40c9-b8a4-05d2e687e858" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TermProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TermProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TermProject/controller/Controller$NewMoveValve.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TermProject/controller/Controller$NewMoveValve.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TermProject/controller/Controller$Valve.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TermProject/controller/Controller$Valve.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TermProject/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TermProject/controller/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TermProject/controller/GameInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TermProject/controller/GameInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TermProject/controller/MazeState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TermProject/controller/MazeState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TermProject/controller/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TermProject/controller/Message.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TermProject/controller/MoveMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TermProject/controller/MoveMessage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TermProject/controller/ValveResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TermProject/controller/ValveResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TermProject/model/Maze.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TermProject/model/Maze.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TermProject/model/Maze1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TermProject/model/Maze1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TermProject/model/Maze2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TermProject/model/Maze2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TermProject/model/Maze3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TermProject/model/Maze3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TermProject/model/Maze4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TermProject/model/Maze4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TermProject/model/Maze5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TermProject/model/Maze5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TermProject/model/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TermProject/model/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TermProject/view/GameView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TermProject/view/GameView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TermProject/view/View$KeyboardListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TermProject/view/View$KeyboardListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TermProject/view/View.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TermProject/view/View.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/MenuView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MenuView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/RulesView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/RulesView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/VictoryMessageView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/VictoryMessageView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,15 +86,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.MazeMania">
-    <configuration default="true" type="TestNG">
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MazeMania" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MazeMania" />
       <module name="TermProject" />
@@ -183,6 +157,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.MazeMania" />
@@ -193,7 +176,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="6e093ecd-ac9d-40c9-b8a4-05d2e687e858" name="Default Changelist" comment="" />
