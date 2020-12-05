@@ -170,7 +170,8 @@ public class Controller {
             return ValveResponse.EXECUTED;
         }
     }
-
+    
+    //Displays 2 types of messages depending on events in the game: a timer trap, and a victory message when finishing game
     public void displayMessage() throws Exception {
         Maze currentMaze = player.getMaze();
         //Timer trap shows message blocking player movement and visibility for 5 seconds when player hits a trap location.
