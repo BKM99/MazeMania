@@ -63,6 +63,7 @@ public class View {
         // for example, gameFrame.dispose();
     }
 
+    //Listener for keyboard, methods signify when key is typed
     public class KeyboardListener implements KeyListener {
 
         public void keyTyped(KeyEvent e) {
